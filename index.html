@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre1 Speaking Practice</title>
+<style>
+  :root {
+    --bg1:#eef5ff;
+    --bg2:#f8fbff;
+    --card:#ffffff;
+    --ink:#243044;
+    --muted:#667085;
+    --main:#2563eb;
+    --main2:#1d4ed8;
+    --soft:#dbeafe;
+    --line:#d0d7e2;
+    --shadow:rgba(15,23,42,.08);
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+    background:linear-gradient(180deg,var(--bg1),var(--bg2));
+    color:var(--ink);
+    min-height:100vh;
+  }
+  .wrap {
+    max-width:960px;
+    margin:0 auto;
+    padding:32px 16px 54px;
+  }
+  header {
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:28px 22px;
+    box-shadow:0 10px 28px var(--shadow);
+    text-align:center;
+    margin-bottom:22px;
+  }
+  h1 {
+    margin:0;
+    font-size:clamp(32px,5vw,58px);
+    letter-spacing:.02em;
+    line-height:1.1;
+  }
+  .subtitle {
+    margin:12px 0 0;
+    color:var(--muted);
+    font-size:clamp(16px,2.5vw,20px);
+    font-weight:800;
+  }
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:16px;
+  }
+  .card {
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:20px;
+    box-shadow:0 8px 24px var(--shadow);
+  }
+  .day {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#1e40af;
+    background:var(--soft);
+    padding:6px 13px;
+    border-radius:999px;
+    font-size:18px;
+    font-weight:900;
+    margin-bottom:12px;
+  }
+  h2 {
+    margin:0 0 8px;
+    font-size:clamp(22px,3vw,30px);
+    line-height:1.2;
+  }
+  .desc {
+    margin:0 0 16px;
+    color:var(--muted);
+    font-weight:700;
+    font-size:15px;
+    min-height:48px;
+  }
+  a.button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    text-decoration:none;
+    background:var(--main);
+    color:white;
+    border-radius:999px;
+    padding:13px 16px;
+    font-size:17px;
+    font-weight:900;
+    box-shadow:0 4px 0 rgba(0,0,0,.16);
+  }
+  a.button:hover {
+    background:var(--main2);
+    transform:translateY(1px);
+    box-shadow:0 3px 0 rgba(0,0,0,.16);
+  }
+  .note {
+    margin-top:22px;
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+    font-weight:700;
+  }
+  @media (max-width:680px) {
+    .grid { grid-template-columns:1fr; }
+    header { padding:24px 16px; }
+    .desc { min-height:auto; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Pre1 Speaking Practice</h1>
+    <p class="subtitle">絵を見ながら、英検準1級のナレーション練習をしましょう。</p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <div class="day">Day 1</div>
+      <h2>Smartphone</h2>
+      <p class="desc">A story about a girl who wanted a smartphone.</p>
+      <a class="button" href="https://nocci-lab.github.io/Pre1_speaking_practice/speaking_practice_day1_smartphone.html">Day 1 を開く</a>
+    </section>
+
+    <section class="card">
+      <div class="day">Day 2</div>
+      <h2>Best Education</h2>
+      <p class="desc">A story about a boy whose mother wants him to have the best education.</p>
+      <a class="button" href="https://nocci-lab.github.io/Pre1_speaking_practice/speaking_practice_day2_best_education.html">Day 2 を開く</a>
+    </section>
+
+    <section class="card">
+      <div class="day">Day 3</div>
+      <h2>Farming Experience</h2>
+      <p class="desc">A story about a woman who decided to experience farm work.</p>
+      <a class="button" href="https://nocci-lab.github.io/Pre1_speaking_practice/speaking_practice_day3_farming_experience.html">Day 3 を開く</a>
+    </section>
+
+    <section class="card">
+      <div class="day">Day 4</div>
+      <h2>Casino</h2>
+      <p class="desc">A speaking practice story about working at a casino.</p>
+      <a class="button" href="https://nocci-lab.github.io/Pre1_speaking_practice/speaking_practice_day4_casino.html">Day 4 を開く</a>
+    </section>
+  </main>
+
+  <p class="note">GitHub Pages 用 index.html</p>
+</div>
+</body>
+</html>
